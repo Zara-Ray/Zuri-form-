@@ -41,24 +41,50 @@ body{
 }
 
 form{
-    float: right;
-    box-shadow: 3px 5px;
-    background-color: aliceblue;
+    box-shadow: 0px 7px rgba(0, 0, 0, 0.162);
+    background-color: whitesmoke;
     width: 600px;
     height: 500px;
     display: inline-flex;
 }
 
-.container1 {
+.box{
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.container1{
+    width: 1000px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.main{
+    margin: 30px auto;
+}
+
+.main h1{
+    font-size: 55px;
+    margin: auto;
+    padding-right: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main p{
+    line-height: 30px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.form-text p{
     background-color: hsl(248, 32%, 49%);
-    width: 600px;
-    height: 50px;
     border-radius: 10px;
     text-align: center;
-    margin: 30px auto;
-    padding: 3px;
-    color: aliceblue;
-    box-shadow: 1px 5px rgba(13, 9, 9, 0.349);
+    padding: 20px;
+    box-shadow: 0px 7px rgba(0, 0, 0, 0.246);
+    color: white;
 }
 
 .container2{
@@ -70,6 +96,7 @@ form{
 
 form{
     border-radius: 10px;
+    margin: 10px auto;
 }
 
 a{
@@ -82,7 +109,7 @@ input{
     margin: 10px auto;
     width: 500px;
     height: 50px;
-    border: 3px solid red;
+    border: 1px solid black;
     border-radius: 10px;
 }
 
@@ -100,16 +127,24 @@ form p{
     text-align: center;
     font-size: 15px;
     color: gray;
+    margin: -0px auto;
 }
 
 button:hover{
     cursor: pointer;
 }
 
-  
-  @media only screen and (max-width: 600px) {
+.main{
+    color:aliceblue;
+    box-sizing: 50px;
+}  
+
+
+
+
+  /* @media only screen and (max-width: 600px) {
     .form {
       width: 90%;
       padding: 2rem 0.5rem;
     }
-  }
+  } */
