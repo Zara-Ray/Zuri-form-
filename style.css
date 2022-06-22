@@ -63,13 +63,14 @@ form{
     font-size: 55px;
     margin: auto;
     padding-right: 30px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .main p{
     line-height: 30px;
     font-size: 20px;
     letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .form-text p{
@@ -79,6 +80,7 @@ form{
     padding: 20px;
     box-shadow: 0px 7px rgba(0, 0, 0, 0.246);
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container2{
@@ -91,12 +93,14 @@ form{
 form{
     border-radius: 10px;
     margin: 10px auto;
+    font-family: 'Poppins', sans-serif;
 }
 
 a{
     font-weight: bold;
     text-decoration: none;
     color: red;
+    font-family: 'Poppins', sans-serif;
 }
 
 input{
@@ -105,6 +109,7 @@ input{
     height: 50px;
     border: 1px solid black;
     border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 button{
@@ -181,16 +186,61 @@ button:hover{
     height: 190px;
 }
 
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.diva{
+    background: orangered;
+    height: 180px;
+    flex: 300px;
+    align-self: flex-end;
+}
+.divb{
+    background: orange;
+    margin: auto 10px;
+    margin-bottom: -70px;
+    width: 200px;
+    height: 250px;
+    align-self: flex-end;
+    flex: 100px;
+}
+.divc{
+    background: rgba(0, 128, 75, 0.985);
+    order: 1;
+    width: 300px;
+    height: 300px;
+    flex-flow: column;
+}
+.divd{
+    background: rgb(0, 145, 255);
+    margin-left: -350px;
+    margin-top: 10px;
+    width: 350px;
+    height: 100px;
+    order: 1;
+}
+.dive{
+    background: rgb(0, 145, 255);
+    margin-top: -190px;
+    margin-left: 310px;
+    width: 350px;
+    height: 190px;
+}
 
 
-
+/* For mobile devices */
   @media (min-width: 375px) and (max-width: 480px){
     .box {
         background: hsl(31, 77%, 52%);
     }
   }
 
-
+/* For desktop devices */
   @media (min-width: 1025px) and (max-width: 1440px){
     .box {
       width: 1000px;
