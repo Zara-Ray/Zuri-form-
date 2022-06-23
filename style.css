@@ -1,3 +1,5 @@
+
+
 body{
     height: 100vh;
     width: 100%;
@@ -17,7 +19,6 @@ body{
     color: aliceblue;
     font-size: 15px;
     font-weight: 400px;
-    text-align: center;
 }
 
 .box{
@@ -286,6 +287,7 @@ button:hover{
     color: white;
 }
 
+
   @media (min-width: 375px) and (max-width: 480px){
     .box {
          padding: 2px 1px;
@@ -300,9 +302,6 @@ button:hover{
       display: flex;
     }
   }
-
-
-
 
 
 
