@@ -1,5 +1,3 @@
-
-
 body{
     height: 100vh;
     width: 100%;
@@ -127,39 +125,6 @@ input{
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;
 }
-
-.field:invalid:focus{
-    background: url(icon-error.svg) no-repeat 96%center white;
-    outline: 2px solid hsl(0, 100%, 74%);
-    border-radius: 5px;
-}
- .field:required:focus ~ .error{
-    display: block;
-    color: hsl(0, 100%, 74%) ;
-    text-align: right;
-    font-weight: bold;
-    font-size:xx-small;
-}
-.field:valid:focus ~ .error{
-  display: none;
-}
- .error{
-   display: none;
-   margin-bottom: 10px;
-}
-
-.field:valid{
-    outline: 2px solid whitesmoke;
-  }
-.field:required{
-    outline: 2px solid transparent;
- 
-}
-
-input[type=email]:invalid:focus::-webkit-input-placeholder{
-   color:hsl(0, 100%, 74%);
-}
-
 
 button{
     margin: 30px auto;
@@ -320,13 +285,46 @@ button:hover{
     color: white;
 }
 
+.field:invalid:focus{
+    background: url(icon-error.svg) no-repeat 96%center white;
+    outline: 2px solid hsl(0, 100%, 74%);
+    border-radius: 5px;
+}
+ .field:required:focus ~ .error{
+    display: block;
+    color: hsl(0, 100%, 74%) ;
+    text-align: right;
+    font-weight: bold;
+    font-size:xx-small;
+}
+.field:valid:focus ~ .error{
+  display: none;
+}
+ .error{
+   display: none;
+   margin-bottom: 10px;
+}
+
+.field:valid{
+    outline: 2px solid whitesmoke;
+  }
+.field:required{
+    outline: 2px solid transparent;
+ 
+}
+
+input[type=email]:invalid:focus::-webkit-input-placeholder{
+   color:hsl(0, 100%, 74%);
+}
+
+
 
   @media (min-width: 375px) and (max-width: 480px){
     .box {
          padding: 2px 1px;
          display: block;
   } 
-}
+
 
   @media (min-width: 1025px) and (max-width: 1440px){
     .box {
@@ -335,6 +333,10 @@ button:hover{
       display: flex;
     }
   }
+  }
+
+
+
 
 
 
