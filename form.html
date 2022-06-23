@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
-    <link rel="stylesheet" href="wowii.css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,27 +28,22 @@
                     <div class="container2">
                         <div>
                             <i class="icon-error.svg"></i>
-                            <input type="text" placeholder="First Name" name="first" required class="field">
-                            <div class="error">First Name cannot be empty</div>
+                            <input type="text" placeholder="First Name" name="first" required="First Name cannot be empty" class="firstName" onkeyup="validateFirstName()">
                         </div>
                         <div>
                             <i class="icon-error.svg"></i>
-                            <input type="text" placeholder="Last Name" name="last" required class="field">
-                            <div class="error">Last Name cannot be empty</div>
+                            <input type="text" placeholder="Last Name" name="last" required="Last Name cannot be empty" class="lastName" onkeyup="validateLastName()">
                         </div>
                         <div>
                             <i class="icon-error.svg"></i>
-                            <input type="email" placeholder="Email Address" name="mail" required class="field">
-                            <div class="error">Looks like this is not an email</div>
+                            <input type="email" placeholder="Email Address" name="mail" required="Looks like this is not an email" class="email" onkeyup="validateEmail()">
                         </div>
                         <div>
                             <i class="icon-error.svg"></i>
-                            <input type="password" placeholder="Password" name="psw" required class="field">
-                            <div class="error">Password cannot be empty</div>
+                            <input type="password" placeholder="Password" name="psw" required="Password cannot be empty" class="password" onkeyup="validatePassword()">
                         </div>
                         <div class="done">
                             <button type="submit" class="signupbtn">CLAIM YOUR FREE TRIAL</button>
-                            <span class="btnError"></span>
                         </div>
                         <p>By clicking the button, you are agreeing to our <a href="#">Terms & Privacy</a></p>
                     </div>
