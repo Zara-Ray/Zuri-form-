@@ -203,49 +203,88 @@ button:hover{
 }
 
 .flex-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    height: 600px;
+    flex-direction: row; 
 }
 
-.diva{
-    background: orangered;
-    height: 180px;
-    flex: 300px;
-    align-self: flex-end;
+.sedan,
+.suv,
+.luxury{
+    width: 280px;
+    text-align: left;
+    height: 480px;
+    line-height: 30px;
 }
-.divb{
-    background: orange;
-    margin: auto 10px;
-    margin-bottom: -70px;
-    width: 200px;
-    height: 250px;
-    align-self: flex-end;
-    flex: 100px;
+
+.sedan{
+    background-color: hsl(31, 77%, 52%);
 }
-.divc{
-    background: rgba(0, 128, 75, 0.985);
-    order: 1;
-    width: 300px;
-    height: 300px;
-    flex-flow: column;
+.sedan button{
+    color: hsl(31, 77%, 52%);
 }
-.divd{
-    background: rgb(0, 145, 255);
-    margin-left: -350px;
-    margin-top: 10px;
-    width: 350px;
-    height: 100px;
-    order: 1;
+
+.suv{
+    background-color: hsl(184, 100%, 22%);
 }
-.dive{
-    background: rgb(0, 145, 255);
-    margin-top: -190px;
-    margin-left: 310px;
-    width: 350px;
-    height: 190px;
+.suv button{
+    color: hsl(184, 100%, 22%);
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+
+.sedan p,
+.suv p,
+.luxury p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin: 30px;
+}
+
+.sedan h2,
+.suv h2,
+.luxury h2{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 35px;
+    margin: 30px;
+    line-height: 1px;
+}
+
+.sedan button,
+.suv button,
+.luxury button{
+    width: 150px;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    border-radius: 100px;
+    margin-left: 30px;
+}
+
+.sedan img,
+.suv img,
+.luxury img{
+    margin: 30px;
+}
+
+.sedan button:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+.suv button:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+.luxury button:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
 }
 
 
