@@ -203,8 +203,8 @@ button:hover{
 }
 
 .flex-container{
-    height: 600px;
-    flex-direction: row; 
+    display: flex;
+    justify-content: center;
 }
 
 .sedan,
@@ -286,7 +286,6 @@ button:hover{
     border: 2px solid white;
     color: white;
 }
-
 
 
   @media (min-width: 375px) and (max-width: 480px){
