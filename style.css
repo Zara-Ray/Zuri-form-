@@ -289,17 +289,22 @@ button:hover{
 
 
   @media (min-width: 375px) and (max-width: 480px){
-    .box {
-         padding: 2px 1px;
-         display: block;
+      .box,
+      .container1,
+      .container2,
+      .main{
+         display: flex;
+         flex-direction: column;
   } 
 
 
   @media (min-width: 1025px) and (max-width: 1440px){
-    .box {
-      width: 1000px;
-      padding: 2px 1px;
-      display: flex;
+      .box,
+      .container1,
+      .container2,
+      .main{
+          display: flex;
+          flex-direction: row;
     }
   }
 
